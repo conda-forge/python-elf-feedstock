@@ -1,5 +1,5 @@
-{% set version = "0.3.0post0" %}
-{% set sha256 = "d57bd171b18dda4682870e8cac0faacb0d8a4c09b4564102c0ecff6b1612bf94" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "f69565e70dba58955e9536050bcf2ba9862d5d1735fd4670cf66af1c651f2897" %}
 {% set name = "elf" %}
 
 package:
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
