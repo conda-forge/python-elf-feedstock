@@ -1,5 +1,5 @@
-{% set version = "0.4.1" %}
-{% set sha256 = "2a86d0c53e7a5eef4a318f8ad77e32ca73b24f4c011b77d844edb3e0261f507c" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "9c00b13f53497bab1852b1ed6783607b8edf072c8f5ac9ef2c921d251a7e942d" %}
 {% set name = "elf" %}
 
 package:
