@@ -36,6 +36,8 @@ requirements:
     - z5py >=2.0.10
 
 test:
+  requires:
+    - requests
   imports:
     - elf
     - elf.io
