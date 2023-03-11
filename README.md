@@ -1,11 +1,11 @@
-About python-elf
-================
+About python-elf-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-elf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/constantinpape/elf
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-elf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utils and convenience functions for large-scale bio-image analysis.
 
