@@ -1,5 +1,5 @@
-{% set version = "0.4.7" %}
-{% set sha256 = "dcacc8b2e2b5f819da6c225efcb0463f3d70b7f58b82da92f4cdb42751cb7c4d" %}
+{% set version = "0.4.8" %}
+{% set sha256 = "ff6830751fb8299f1087244756520df0d54ef94347d17766b51f32893888a998" %}
 {% set name = "elf" %}
 
 package:
@@ -30,7 +30,7 @@ requirements:
     - pandas
     - scikit-image
     - scikit-learn
-    - skan
+    - skan >=0.11.1
     - tqdm
     - vigra
     - z5py >=2.0.10
