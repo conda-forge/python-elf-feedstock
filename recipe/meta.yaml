@@ -1,5 +1,5 @@
-{% set version = "0.5.0" %}
-{% set sha256 = "745228fcefdad0b03d37d7ac99abecec95f2b39a27cc11d5a71c80d5f320016f" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "29c542dfb953a1975e2d45f72c84b8f8a2f79fcb0cb2d855dae5493cadbbaa9d" %}
 {% set name = "elf" %}
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
