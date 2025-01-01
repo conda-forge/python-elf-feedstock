@@ -17,10 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - affogato
     - imageio
     - h5py
@@ -39,6 +40,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - requests
   imports:
     - elf
