@@ -1,6 +1,4 @@
 {% set version = "0.6.0" %}
-{% set sha256 = "520feb59a147e4701f39b54608cd0e4042c739c15929c62a8eaf3a96f5caf8ae" %}
-{% set name = "elf" %}
 
 package:
   name: python-elf
@@ -8,10 +6,10 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 520feb59a147e4701f39b54608cd0e4042c739c15929c62a8eaf3a96f5caf8ae
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
@@ -37,6 +35,9 @@ requirements:
     - tqdm
     - vigra
     - z5py >=2.0.10
+  run_constrained:
+    # https://github.com/constantinpape/elf/issues/114
+    - zarr <3.0
 
 test:
   requires:
