@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@constantinpape](https://github.com/constantinpape/)
 
-
-<!-- dummy commit to enable rerendering -->
-
