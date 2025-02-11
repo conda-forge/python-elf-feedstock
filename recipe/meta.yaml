@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: python-elf
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: 520feb59a147e4701f39b54608cd0e4042c739c15929c62a8eaf3a96f5caf8ae
+  sha256: f2f50fc3158441d47d7253690549c5c41df5df749a5eabadc763d0800898c503
 
 build:
-  number: 1
+  number: 0
   script: pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
