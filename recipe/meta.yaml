@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: python-elf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: 1ee86d4030404edfec334993a3d286ecdd7faf68233266c3a741519f1ee1556b
+  sha256: a01bc088a925fc50d70fe1c9472433b3064ecdf709f412bfee4f672687794de2
 
 build:
   number: 0
@@ -35,14 +35,12 @@ requirements:
     - tqdm
     - vigra
     - z5py >=2.0.10
-  run_constrained:
-    # https://github.com/constantinpape/elf/issues/114
-    - zarr <3.0
 
 test:
   requires:
     - python {{ python_min }}
     - requests
+    - zarr
   imports:
     - elf
     - elf.io
