@@ -1,4 +1,4 @@
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: python-elf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: 0f132b51c78da30dc768b30aad010cfc80cdfac915808ef57967b29abefde79a
+  sha256: 382f60939e198754e87c71987192c3442be610199eb89a9fba3a838daddf9520
 
 build:
   number: 0
