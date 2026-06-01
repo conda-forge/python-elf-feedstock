@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.9.1" %}
 
 package:
   name: python-elf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: 9d5c59fbd90fa9f9d9150ee1188a0128d400123a6be036cba340d870604511ca
+  sha256: 4803a61efd0ed807ea13f4e33fe68de2cfb4c3a6b1975ba9b7277471d9f324f0
 
 build:
   number: 0
@@ -20,27 +20,24 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - affogato
+    - bioimage-cpp
     - imageio
     - h5py
     - mrcfile
-    - nifty >=1.1
-    - numba
     - numpy
     - pandas
+    - pooch
     - scikit-image
     - scikit-learn
     - skan >=0.11.1
     - threadpoolctl
-    - tqdm
-    - vigra
+    - zarr
     - z5py >=2.0.10
 
 test:
   requires:
     - python {{ python_min }}
     - requests
-    - zarr
   imports:
     - elf
     - elf.io
