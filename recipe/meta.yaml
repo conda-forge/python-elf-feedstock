@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: python-elf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/constantinpape/elf/archive/{{ version }}.tar.gz
-  sha256: 70c72a21999cd44fec8bf5f2ba5a69b1fcbf763d728ebdcfdc767ffe35af164c
+  sha256: 4803a61efd0ed807ea13f4e33fe68de2cfb4c3a6b1975ba9b7277471d9f324f0
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - mrcfile
     - numpy
     - pandas
+    - pooch
     - scikit-image
     - scikit-learn
     - skan >=0.11.1
